@@ -20,6 +20,8 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
+OPENAI_APIKEY = os.getenv('OPENAI_API')
+
 logger = logging.getLogger(__name__)
 
 class DiscordTTSBot(commands.Bot):
