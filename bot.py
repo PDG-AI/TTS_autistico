@@ -1267,14 +1267,14 @@ class DiscordTTSBot(commands.Bot):
 
 
 
-#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
+
 
     async def razonamiento_con_busqueda(mensaje, username):
         """
         GPT decide si necesita buscar algo.
         Si lo pide, se hace la búsqueda y se le vuelve a pasar el resultado.
         """
-        openai.api_key = "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"
+        openai.api_key = OPENAI_APIKEY
 
         # Primer paso → GPT analiza si necesita buscar
         primer_prompt = f"""
